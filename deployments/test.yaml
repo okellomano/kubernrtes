@@ -1,0 +1,19 @@
+kind: Deployment
+metadata:
+  name: httpd-frontend
+  labels: 
+    app: frontend
+spec:
+  template:
+    metadata:
+      name: frontend
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - name: httpd-alpine
+          image: httpd:2.4-alpine
+  replicas: 3
+  selector:
+    matchLabels:
+      app: frontend
