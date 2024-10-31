@@ -1,3 +1,3 @@
-# Profiles REST API
+# Learning Kubernetes
 
-This is the profiles REST API
+Deploying a multi-tier app on k8s.
